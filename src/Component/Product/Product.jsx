@@ -1,4 +1,5 @@
 import React from 'react';
+import RelatedItem from './RelatedItem';
 
 const Product = () => {
     return (
@@ -128,8 +129,30 @@ const Product = () => {
                         </span>
                     </div>
                 </div>
-                <div className='sm-d-none'>
+                <div className='sm-d-none related-items'>
+                    <h4 className='related-items-title'>Related Items</h4>
+                    <RelatedItem
+                        url="/tree.png"
+                        title="Qdol Pokemon Limited Edition Soda"
+                        weight="250 gm"
+                        price="BDT. 144"
+                    />
+                    <RelatedItem
+                        url="/potato.png"
+                        title="Qdol Pokemon Limited Edition Soda"
+                        weight="250 gm"
+                        price="BDT. 144"
+                    />
+                    <RelatedItem
+                        url="/strawberry.png"
+                        title="Qdol Pokemon Limited Edition Soda"
+                        weight="250 gm"
+                        price="BDT. 144"
+                    />
 
+                    <div className='side-img-container'>
+                        <img src="/saveTK.png" alt="" className='side-img' />
+                    </div>
                 </div>
             </div>
         </section>
