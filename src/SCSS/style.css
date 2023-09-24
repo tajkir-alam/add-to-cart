@@ -7,44 +7,80 @@
   text-decoration: none;
 }
 
-header {
-  background: #4ABD88;
+.container {
+  padding: 0 45px;
+}
+
+.flex {
   display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+header .header-section {
+  background: #4ABD88;
   justify-content: space-between;
-  gap: 5px;
+  gap: 12px;
   padding: 8px 15px;
   white-space: nowrap;
   overflow: hidden;
 }
-header .header-content {
-  display: flex;
-  align-items: center;
+header .header-section .header-content {
   gap: 32px;
 }
-header .header-content > p {
+header .header-section .header-content > p {
   color: #FFF;
   font-weight: 600;
   font-size: 12px;
   font-style: normal;
   letter-spacing: -0.12px;
 }
-header .header-menu ul {
-  display: flex;
-}
-header .header-menu ul > li a {
+header .header-section .header-menu ul > li a {
   color: #FFF;
   font-weight: 600;
   font-size: 10px;
   letter-spacing: -0.1px;
   padding: 0 10px;
 }
-header .header-menu ul > li:nth-child(2) a {
+header .header-section .header-menu ul > li:nth-child(2) a {
   border-left: 1px;
   border-right: 1px;
   border-top: 0;
   border-bottom: 0;
   border-color: white;
   border-style: solid;
+}
+header nav .nav-container {
+  gap: 25px;
+}
+header nav .nav-container .logo {
+  width: 73px;
+  height: 64px;
+}
+header nav .nav-container .nav-menu ul {
+  gap: 20px;
+}
+header nav .nav-container .nav-menu ul > li a {
+  gap: 12px;
+  position: relative;
+  padding-right: 25px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.56px;
+}
+header nav .nav-container .nav-menu ul > li a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  transform: translateY(-50%);
+  right: 0;
+  width: 1px;
+  height: 8px;
+  background-color: #8E8E8E;
 }
 
 main {
@@ -53,4 +89,10 @@ main {
 
 footer {
   background-color: #ECECE8;
+}
+
+@media screen and (max-width: 767px) {
+  .d-none {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
