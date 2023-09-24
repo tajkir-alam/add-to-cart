@@ -1,10 +1,11 @@
-import Nav from "./Component/Nav/Nav"
+import Nav from "./Component/Shared/Nav/Nav"
 
 function App() {
 
   return (
     <>
       <Nav />
+
     </>
   )
 }
