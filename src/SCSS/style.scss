@@ -200,14 +200,21 @@ main {
 
         .product {
             margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 45px;
 
             .product-img {
                 position: relative;
 
+                .productImg {
+                    width: 100%;
+                }
+
                 .discountImg-container {
                     position: absolute;
                     top: 0;
-                    left: 0;
+                    left: 5%;
 
                     .discountImg-content {
                         position: relative;
@@ -223,54 +230,177 @@ main {
                         }
                     }
                 }
-                
+
                 .saleImg-container,
                 .sale-img-vector {
                     position: absolute;
                     right: 5%;
                     bottom: 0;
 
-                    .dash-top {
-                        position: absolute;
-                        top: 10%;
-                        left: 10%;
-                    }
+                    .saleImg-content {
+                        position: relative;
 
-                    .dash-bottom {
-                        position: absolute;
-                        bottom: 15%;
-                        left: 15%;
-                    }
+                        .dash-top {
+                            position: absolute;
+                            top: 10%;
+                            left: 10%;
+                        }
 
-                    .sale-text {
-                        font-size: 29px;
+                        .dash-bottom {
+                            position: absolute;
+                            bottom: 15%;
+                            left: 15%;
+                        }
+
+                        .sale-text {
+                            font-size: 29px;
+                            font-weight: 700;
+                            color: white;
+                            position: absolute;
+                            top: 30%;
+                            left: 10%;
+                            transform: rotate(-12.599deg);
+
+                            .super-text {
+                                font-size: 19px;
+                                color: #D46400;
+                                display: block;
+                                margin-bottom: -10px;
+                            }
+                        }
+
+                        .sale-exclamation {
+                            font-size: 41px;
+                            font-weight: 700;
+                            color: white;
+                            position: absolute;
+                            top: 15%;
+                            right: 20%;
+                            transform: rotate(-12.599deg);
+
+                            .exclamation-symbol {
+                                color: #D46400;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .product-info {
+
+                .product-title {
+                    color: $primary-color;
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: 118%;
+                    letter-spacing: -0.36px;
+                    margin-bottom: 4px;
+                }
+
+                .product-badge {
+                    color: #744210;
+                    background-color: #FEEBCB;
+                    border-radius: 2px;
+                    padding: 0 2px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16px;
+                }
+
+                .price {
+                    color: #333;
+                    font-size: 40px;
+                    font-weight: 700;
+                    letter-spacing: -1.2px;
+                    gap: 16px;
+                    margin-top: 16px;
+
+                    .strikethrough-text {
+                        text-decoration: line-through;
+                        color: #11823B;
+                        font-size: 24px;
                         font-weight: 700;
-                        color: white;
-                        position: absolute;
-                        top: 30%;
-                        left: 10%;
-                        transform: rotate(-12.599deg);
+                        letter-spacing: -0.72px;
+                    }
+                }
 
-                        .super-text {
-                            font-size: 19px;
-                            color: #D46400;
-                            display: block;
-                            margin-bottom: -10px;
+                .product-short-info {
+                    gap: 25px;
+                    margin-top: 20px;
+
+                    .short-info-title-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
+
+                        .short-info-title {
+                            color: #333;
+                            font-size: 14px;
+                            font-weight: 700;
+                            letter-spacing: -0.42px;
                         }
                     }
 
-                    .sale-exclamation {
-                        font-size: 41px;
-                        font-weight: 700;
-                        color: white;
-                        position: absolute;
-                        top: 15%;
-                        right: 20%;
-                        transform: rotate(-12.599deg);
+                    .short-info-details-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
 
-                        .exclamation-symbol {
-                            color: #D46400;
+                        .short-info-details-container-child-1 {
+                            color: #11823B;
+                            font-size: 14px;
+                            font-weight: 700;
+                            letter-spacing: -0.42px;
                         }
+
+                        .short-info-details-container-child-2 {
+                            color: #777;
+                            font-size: 14px;
+                            font-weight: 700;
+                            letter-spacing: -0.42px;
+                        }
+
+                        .short-info-details-container-child-3 {
+                            color: #22543D;
+                            font-size: 12px;
+                            font-weight: 700;
+                            line-height: 16px;
+                            text-transform: uppercase;
+                            flex-wrap: wrap;
+                            gap: 10px;
+
+                            >span {
+                                padding: 0 4px;
+                                border-radius: 2px;
+                                background: #C6F6D5;
+                            }
+                        }
+                    }
+                }
+
+                .product-tagline {
+                    margin-top: 40px;
+                    color: #333;
+                    font-size: 12px;
+                    letter-spacing: -0.12px;
+                }
+
+                .product-interaction {
+                    outline: none;
+                    border: none;
+                    margin-top: 22p;
+
+                    .cart-btn {
+                        gap: 8px;
+                        border: none;
+                        padding: 10px 40px;
+                        border-radius: 4px;
+                        background-color: #0DB04B;
+                        color: #FFF;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 29px;
+                        letter-spacing: -0.18px;
                     }
                 }
             }
@@ -309,6 +439,7 @@ footer {
 
             .product {
                 margin-top: 32px;
+                grid-template-columns: repeat(1, 1fr);
             }
         }
     }
