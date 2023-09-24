@@ -149,6 +149,42 @@ header nav .nav-container .nav-right-content .userImg > img {
 main {
   background-color: #F3F3EF;
 }
+main .product-section {
+  padding: 32px 0px;
+}
+main .product-section .path {
+  gap: 8px;
+  line-height: 24px;
+}
+main .product-section .path .current-path {
+  color: #11823B;
+}
+main .product-section .product {
+  margin-top: 50px;
+}
+main .product-section .product .product-img {
+  position: relative;
+}
+main .product-section .product .product-img .discountImg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .product-section .product .product-img .discountImg-container .discountImg-content {
+  position: relative;
+}
+main .product-section .product .product-img .discountImg-container .discountImg-content .discountImg-text {
+  position: absolute;
+  bottom: 70%;
+  left: 25%;
+  transform: translateY(-10%);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+main .product-section .product .product-img .saleImg-container {
+  position: relative;
+}
 
 footer {
   background-color: #ECECE8;
@@ -163,6 +199,12 @@ footer {
   }
   header nav .nav-container .nav-left-content {
     gap: 4px;
+  }
+  main .product-section {
+    padding: 16px 0px;
+  }
+  main .product-section .product {
+    margin-top: 32px;
   }
 }
 @media screen and (min-width: 767px) {

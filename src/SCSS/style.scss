@@ -170,7 +170,7 @@ header {
 
                 .userImg {
                     gap: 5px;
-                    
+
                     >img {
                         height: 30px;
                         width: 30px;
@@ -185,6 +185,52 @@ header {
 
 main {
     background-color: #F3F3EF;
+
+    .product-section {
+        padding: 32px 0px;
+
+        .path {
+            gap: 8px;
+            line-height: 24px;
+
+            .current-path {
+                color: #11823B;
+            }
+        }
+
+        .product {
+            margin-top: 50px;
+
+            .product-img {
+                position: relative;
+
+                .discountImg-container {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    .discountImg-content {
+                        position: relative;
+
+                        .discountImg-text {
+                            position: absolute;
+                            bottom: 70%;
+                            left: 25%;
+                            transform: translateY(-10%);
+                            color: white;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .saleImg-container{
+                    position: relative;
+                    
+                }
+            }
+        }
+    }
 }
 
 footer {
@@ -207,6 +253,17 @@ footer {
                 .nav-left-content {
                     gap: 4px;
                 }
+            }
+        }
+    }
+
+    main {
+
+        .product-section {
+            padding: 16px 0px;
+
+            .product {
+                margin-top: 32px;
             }
         }
     }
