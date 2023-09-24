@@ -170,6 +170,7 @@ main .product-section .product .product-img {
 }
 main .product-section .product .product-img .productImg {
   width: 100%;
+  height: 100%;
 }
 main .product-section .product .product-img .discountImg-container {
   position: absolute;
@@ -328,7 +329,8 @@ main .product-section .product .product-info .product-tagline {
 main .product-section .product .product-info .product-interaction {
   outline: none;
   border: none;
-  margin-top: 22p;
+  margin-top: 22px;
+  gap: 8px;
 }
 main .product-section .product .product-info .product-interaction .cart-btn {
   gap: 8px;
@@ -341,6 +343,20 @@ main .product-section .product .product-info .product-interaction .cart-btn {
   font-weight: 600;
   line-height: 29px;
   letter-spacing: -0.18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main .product-section .product .product-info .product-interaction .cart-btn:hover {
+  background-color: #43be72;
+}
+main .product-section .product .product-info .product-interaction .interaction {
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #FFF;
+  cursor: pointer;
 }
 
 footer {

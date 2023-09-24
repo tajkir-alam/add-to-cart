@@ -209,6 +209,7 @@ main {
 
                 .productImg {
                     width: 100%;
+                    height: 100%;
                 }
 
                 .discountImg-container {
@@ -388,7 +389,8 @@ main {
                 .product-interaction {
                     outline: none;
                     border: none;
-                    margin-top: 22p;
+                    margin-top: 22px;
+                    gap: 8px;
 
                     .cart-btn {
                         gap: 8px;
@@ -401,6 +403,22 @@ main {
                         font-weight: 600;
                         line-height: 29px;
                         letter-spacing: -0.18px;
+                        cursor: pointer;
+                        transition: .5s;
+
+                        &:hover {
+                            background-color: #43be72;
+                        }
+                    }
+
+                    .interaction {
+                        padding: 11px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 4px;
+                        background: #FFF;
+                        cursor: pointer;
                     }
                 }
             }
