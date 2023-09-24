@@ -223,10 +223,55 @@ main {
                         }
                     }
                 }
+                
+                .saleImg-container,
+                .sale-img-vector {
+                    position: absolute;
+                    right: 5%;
+                    bottom: 0;
 
-                .saleImg-container{
-                    position: relative;
-                    
+                    .dash-top {
+                        position: absolute;
+                        top: 10%;
+                        left: 10%;
+                    }
+
+                    .dash-bottom {
+                        position: absolute;
+                        bottom: 15%;
+                        left: 15%;
+                    }
+
+                    .sale-text {
+                        font-size: 29px;
+                        font-weight: 700;
+                        color: white;
+                        position: absolute;
+                        top: 30%;
+                        left: 10%;
+                        transform: rotate(-12.599deg);
+
+                        .super-text {
+                            font-size: 19px;
+                            color: #D46400;
+                            display: block;
+                            margin-bottom: -10px;
+                        }
+                    }
+
+                    .sale-exclamation {
+                        font-size: 41px;
+                        font-weight: 700;
+                        color: white;
+                        position: absolute;
+                        top: 15%;
+                        right: 20%;
+                        transform: rotate(-12.599deg);
+
+                        .exclamation-symbol {
+                            color: #D46400;
+                        }
+                    }
                 }
             }
         }

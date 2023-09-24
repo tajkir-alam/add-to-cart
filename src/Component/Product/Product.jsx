@@ -52,7 +52,25 @@ const Product = () => {
 
                     {/* fot bottom right sale content */}
                     <div className="saleImg-container">
-                        
+                        <span className='sale-img-vector'>
+                            <img src="/saleImgBg.png" alt="" />
+                        </span>
+                        <span className='dash-top'>
+                            <img src="/dashTop.png" alt="" />
+                        </span>
+                        <span className='dash-bottom'>
+                            <img src="/dashBottom.png" alt="" />
+                        </span>
+                        <span className='sale-text'>
+                            <span className='super-text'>&nbsp; SUPER </span> SALE
+                        </span>
+                        <span className='sale-exclamation'>
+                            <span className='exclamation-symbol'>!</span>!
+                        </span>
+                        <span>
+                            <img src="/saleImgBgShadow.png" alt="" />
+                        </span>
+
                     </div>
                 </div>
                 <div>
