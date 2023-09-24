@@ -39,20 +39,9 @@ const Product = () => {
 
             <div className='product'>
                 <div className='product-img' >
+                    <div className='flex items-center justify-center'>
                     <img src="/productImg.png" alt="" className='productImg' />
-
-                    {/* for top left discount content */}
-                    <div className="discountImg-container">
-                        <span className='discountImg-content'>
-                            <img src="/discount.png" alt="" />
-                            <span className="discountImg-text">
-                                10% OFF
-                            </span>
-                        </span>
-                    </div>
-
-                    {/* fot bottom right sale content */}
-                    <div className="saleImg-container">
+                     <div className="saleImg-container">
                         <div className="saleImg-content">
                             <span className='sale-img-vector'>
                                 <img src="/saleImgBg.png" alt="" />
@@ -74,6 +63,41 @@ const Product = () => {
                             </span>
                         </div>
                     </div>
+                    </div>
+
+                    {/* for top left discount content */}
+                    <div className="discountImg-container">
+                        <span className='discountImg-content'>
+                            <img src="/discount.png" alt="" />
+                            <span className="discountImg-text">
+                                10% OFF
+                            </span>
+                        </span>
+                    </div>
+
+                    {/* fot bottom right sale content */}
+                    {/* <div className="saleImg-container">
+                        <div className="saleImg-content">
+                            <span className='sale-img-vector'>
+                                <img src="/saleImgBg.png" alt="" />
+                            </span>
+                            <span className='dash-top'>
+                                <img src="/dashTop.png" alt="" />
+                            </span>
+                            <span className='dash-bottom'>
+                                <img src="/dashBottom.png" alt="" />
+                            </span>
+                            <span className='sale-text'>
+                                <span className='super-text'>&nbsp; SUPER </span> SALE
+                            </span>
+                            <span className='sale-exclamation'>
+                                <span className='exclamation-symbol'>!</span>!
+                            </span>
+                            <span>
+                                <img src="/saleImgBgShadow.png" alt="" />
+                            </span>
+                        </div>
+                    </div> */}
                 </div>
 
                 <div className='product-info'>
