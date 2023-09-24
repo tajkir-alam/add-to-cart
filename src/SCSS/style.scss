@@ -17,6 +17,10 @@ $primary-color: #1D1D21;
     display: flex;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 .items-center {
     align-items: center;
 }
@@ -24,7 +28,6 @@ $primary-color: #1D1D21;
 header {
     .header-section {
         background: #4ABD88;
-        justify-content: space-between;
         gap: 12px;
         padding: 8px 15px;
         white-space: nowrap;
@@ -68,41 +71,112 @@ header {
     }
 
     nav {
-        .nav-container {
-            gap: 25px;
 
-            .logo {
-                width: 73px;
-                height: 64px;
+        .nav-container {
+
+            .nav-left-content {
+                gap: 25px;
+
+                .logo {
+                    width: 73px;
+                    height: 64px;
+                }
+
+                .nav-menu {
+                    ul {
+                        gap: 20px;
+
+                        >li a {
+                            gap: 12px;
+                            position: relative;
+                            padding-right: 25px;
+                            color: #000;
+                            font-size: 14px;
+                            font-weight: 400;
+                            letter-spacing: -0.56px;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                bottom: 0;
+                                transform: translateY(-50%);
+                                right: 0;
+                                width: 1px;
+                                height: 8px;
+                                background-color: #8E8E8E;
+                            }
+                        }
+                    }
+
+                }
             }
 
-            .nav-menu {
-                ul {
-                    gap: 20px;
+            .nav-right-content {
+                gap: 27px;
+                flex: 1;
+                justify-content: end;
 
-                    >li a {
-                        gap: 12px;
-                        position: relative;
-                        padding-right: 25px;
-                        color: #000;
+                .search {
+                    position: relative;
+
+
+                    .menu-input {
+                        border-radius: 4px;
+                        border: 1px solid #E5E5E5;
+                        padding: 14px 158px 14px 38px;
                         font-size: 14px;
-                        font-weight: 400;
+                        color: $primary-color;
+                        outline: none;
                         letter-spacing: -0.56px;
 
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            top: 50%;
-                            bottom: 0;
-                            transform: translateY(-50%);
-                            right: 0;
-                            width: 1px;
-                            height: 8px;
-                            background-color: #8E8E8E;
+                        &::placeholder {
+                            color: $primary-color;
                         }
+                    }
+
+                    .search-icon {
+                        position: absolute;
+                        top: 55%;
+                        transform: translateY(-50%);
+                        left: 14px;
                     }
                 }
 
+                .fav-icon {
+                    position: relative;
+
+                    .fav-icon-badge {
+                        position: absolute;
+                        top: -25%;
+                        left: 45%;
+                        background-color: #0DB04B;
+                        width: 20px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: white;
+                        font-size: 11px;
+                        font-weight: 500;
+                        border-radius: 100%;
+                    }
+                }
+
+                .divider {
+                    background: #8B8B8B;
+                    width: 1px;
+                    height: 15px;
+                }
+
+                .userImg {
+
+                    >img {
+                        height: 30px;
+                        width: 30px;
+                        background-color: #FCAC1F;
+                        border-radius: 100%;
+                    }
+                }
             }
         }
     }
@@ -118,7 +192,7 @@ footer {
 
 
 @media screen and (max-width: 767px) {
-    .d-none {
+    .sm-d-none {
         display: none;
     }
 }
