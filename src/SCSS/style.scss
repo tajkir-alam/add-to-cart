@@ -169,7 +169,8 @@ header {
                 }
 
                 .userImg {
-
+                    gap: 5px;
+                    
                     >img {
                         height: 30px;
                         width: 30px;
@@ -192,7 +193,29 @@ footer {
 
 
 @media screen and (max-width: 767px) {
+    .container {
+        padding: 0 17px;
+    }
+
     .sm-d-none {
         display: none;
     }
+
+    header {
+        nav {
+            .nav-container {
+                .nav-left-content {
+                    gap: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .lg-d-none {
+        display: none;
+    }
+
+
 }
