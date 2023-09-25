@@ -68,7 +68,7 @@ const Footer = () => {
                 </div>
             </section>
             <section className="bottom-footer">
-                <p>© 2023 ThinkCrypt, All Rights Reserved</p>
+                <p className='bottom-footer-text'>© 2023 ThinkCrypt, All Rights Reserved</p>
             </section>
         </footer>
     );
