@@ -28,33 +28,35 @@ const Footer = () => {
                         thinkcrypt@io
                     </a>
                 </div>
-                <div className='col'>
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Career</a></li>
-                        <li><a href="">Policy</a></li>
-                        <li><a href="">Offer</a></li>
-                    </ul>
-                </div>
-                <div className='col'>
-                    <h3>Policy</h3>
-                    <ul>
-                        <li><a href="">Terms of Use</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Return & Refund</a></li>
-                        <li><a href="">Reward Redemption</a></li>
-                    </ul>
-                </div>
-                <div className='col'>
-                    <h3>Account</h3>
-                    <ul>
-                        <li><a href="">Sign In</a></li>
-                        <li><a href="">View Cart</a></li>
-                        <li><a href="">My Whitelist</a></li>
-                    </ul>
+                <div className="nav-col">
+                    <div className='col'>
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Career</a></li>
+                            <li><a href="">Policy</a></li>
+                            <li><a href="">Offer</a></li>
+                        </ul>
+                    </div>
+                    <div className='col'>
+                        <h3>Policy</h3>
+                        <ul>
+                            <li><a href="">Terms of Use</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Return & Refund</a></li>
+                            <li><a href="">Reward Redemption</a></li>
+                        </ul>
+                    </div>
+                    <div className='col'>
+                        <h3>Account</h3>
+                        <ul>
+                            <li><a href="">Sign In</a></li>
+                            <li><a href="">View Cart</a></li>
+                            <li><a href="">My Whitelist</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="col">
                     <h3>Install App</h3>

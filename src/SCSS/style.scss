@@ -15,6 +15,7 @@ button {
     border: none;
 }
 
+// Common class 
 .container {
     max-width: 1440px;
     padding: 0 45px;
@@ -703,8 +704,8 @@ footer {
         border-bottom: 1px solid #E1E1E1;
         padding: 45px 0px;
         display: grid;
-        grid-template-columns: 5fr 1fr 1fr 1fr 4fr;
-        gap: 80px;
+        grid-template-columns: 5fr 3fr 4fr;
+        gap: 78px;
 
         .col {
 
@@ -718,42 +719,47 @@ footer {
             }
         }
 
-        .col ul {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            
-            li {
-                position: relative;
-                cursor: pointer;
-                
-                &::after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: -3px;
-                    width: 0%;
-                    height: 2px;
-                    background-color: $secondary-color;
-                    opacity: 0.5;
-                    transition: .3s;
+        .nav-col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 78px;
 
-                }
+            .col ul {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
 
-                &:hover {
+                li {
+                    position: relative;
+                    cursor: pointer;
+
                     &::after {
-                        width: 100%;
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -3px;
+                        width: 0%;
+                        height: 2px;
+                        background-color: $secondary-color;
+                        opacity: 0.5;
+                        transition: .3s;
+
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
                     }
                 }
-            }
 
-            li>a {
-                color: $secondary-color;
-                font-size: 12px;
-                font-weight: 500;
-                letter-spacing: -0.2px;
-                white-space: nowrap;
-                padding-right: 4px;
+                li>a {
+                    color: $secondary-color;
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: -0.2px;
+                    white-space: nowrap;
+                }
             }
         }
     }
@@ -840,20 +846,25 @@ footer {
             }
         }
     }
+
+    footer {
+        padding: 30px 24px;
+
+        .top-footer {
+            display: grid;
+            grid-template-columns: 12fr;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
     .lg-d-none {
         display: none;
     }
-
-
 }
 
 @media screen and (max-width: 1024px) {
     .md-d-none {
         display: none;
     }
-
-
 }
