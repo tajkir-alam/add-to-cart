@@ -1,3 +1,4 @@
+import DetailTab from "./Component/DetailTab/DetailTab"
 import Product from "./Component/Product/Product"
 import Nav from "./Component/Shared/Nav/Nav"
 
@@ -8,6 +9,8 @@ function App() {
       <Nav />
       <main className="container">
         <Product />
+        <DetailTab />
+
       </main>
 
     </>

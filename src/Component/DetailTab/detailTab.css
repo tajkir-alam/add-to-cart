@@ -1,0 +1,70 @@
+.detail-tab {
+    padding: 55px 0px;
+}
+.react-tabs__tab {
+    color: #444;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.react-tabs__tab--selected {
+    color: #444;
+    font-size: 26px;
+    font-weight: 900;
+    border: none;
+    background-color: transparent;
+    border-bottom: 4px solid #11823B;
+}
+
+.react-tabs__tab:focus {
+    outline: none;
+    border-bottom: 4px solid #11823B;
+}
+
+.react-tabs__tab-panel--selected {
+    display: block;
+    /* border-radius: 0px 0px 8px 8px; */
+}
+
+/* React tabs package default class end */
+
+/* React tabs package Class class start */
+
+.rounded-tab {
+    border-radius: 8px;
+}
+
+.custom-tab-list-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-tab-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.custom-tab {
+    width: 100%;
+    list-style: none;
+    padding: 5px 0px;
+    border: 2px solid var(--primary-color);
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.custom-tabPanel {
+    border-radius: 0px 0px 8px 8px;
+}
