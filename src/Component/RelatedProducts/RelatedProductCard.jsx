@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const RelatedProductCard = ({ product }) => {
     const [quantity, setQuantity] = useState(1);
     const [showQuantity, setShowQuantity] = useState(false)
-    const closeQuantity = useRef(null);
+    const closeQuantity = useRef(false);
 
     // Quantity will disappear 
     useEffect(() => {
