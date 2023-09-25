@@ -133,6 +133,11 @@ const Product = () => {
                 </div>
                 <div className='sm-d-none md-d-none related-items'>
                     <h4 className='related-items-title'>Related Items</h4>
+
+                    {/*
+                         This part will be in a map function and it will be fetch from a api. 
+                         NB as per as the figma map will do a slice from 0 to 3.
+                    */}
                     <RelatedItem
                         url="/tree.png"
                         title="Qdol Pokemon Limited Edition Soda"
