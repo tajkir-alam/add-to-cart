@@ -8,7 +8,9 @@
 }
 
 .container {
+  max-width: 1440px;
   padding: 0 45px;
+  margin: 0 auto;
 }
 
 .flex {
@@ -27,6 +29,10 @@
   align-items: center;
 }
 
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 header .header-section {
   background: #4ABD88;
   gap: 12px;
@@ -287,7 +293,6 @@ main .product-section .product .product-info .product-short-info {
   margin-top: 20px;
 }
 main .product-section .product .product-info .product-short-info .short-info-title-container {
-  display: flex;
   flex-direction: column;
   gap: 14px;
 }
@@ -298,7 +303,6 @@ main .product-section .product .product-info .product-short-info .short-info-tit
   letter-spacing: -0.42px;
 }
 main .product-section .product .product-info .product-short-info .short-info-details-container {
-  display: flex;
   flex-direction: column;
   gap: 14px;
 }
@@ -359,9 +363,7 @@ main .product-section .product .product-info .product-interaction .cart-btn:hove
 }
 main .product-section .product .product-info .product-interaction .interaction {
   padding: 11px;
-  display: flex;
   justify-content: center;
-  align-items: center;
   border-radius: 4px;
   background: #FFF;
   cursor: pointer;
@@ -384,12 +386,11 @@ main .product-section .product .related-items .related-items-container {
   margin-bottom: 10px;
 }
 main .product-section .product .related-items .related-items-container .related-items-content {
-  display: flex;
   flex-direction: column;
   gap: 3px;
 }
 main .product-section .product .related-items .related-items-container .related-items-content .related-items-content-title {
-  color: #1D1D1D;
+  color: #1D1D21;
   font-size: 12px;
   font-weight: 400;
   line-height: 17px;
@@ -410,11 +411,9 @@ main .product-section .product .related-items .related-items-container .related-
   letter-spacing: -0.3px;
 }
 main .product-section .product .related-items .related-items-container .related-items-cart-icon {
-  display: flex;
   width: 26px;
   height: 26px;
   justify-content: center;
-  align-items: center;
   border-radius: 30px;
   background: #11823B;
   position: absolute;
@@ -443,12 +442,10 @@ main .related-products-section .related-products-title-container .slider-btn {
 }
 main .related-products-section .related-products-title-container .slider-btn .arrow-left,
 main .related-products-section .related-products-title-container .slider-btn .arrow-right {
-  display: flex;
   width: 32px;
   height: 32px;
   padding: 4px;
   justify-content: center;
-  align-items: center;
   border-radius: 4px;
   background: #FFF;
   cursor: pointer;
@@ -464,6 +461,71 @@ main .related-products-section .related-products-title-container .slider-btn .ar
 }
 main .related-products-section .card-container {
   margin-top: 25px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(68, 68, 68, 0.05);
+}
+main .related-products-section .card-container .no-badge {
+  padding-top: 20px;
+}
+main .related-products-section .card-container .no-sale {
+  padding-top: 20px;
+}
+main .related-products-section .card-container .no-badge_no-sale {
+  padding-top: 45px;
+}
+main .related-products-section .card-container .card-img {
+  width: 140px;
+  margin: 0 auto;
+}
+main .related-products-section .card-container .card-img img {
+  width: 100%;
+}
+main .related-products-section .card-container .card-body {
+  margin-top: 5px;
+  flex-direction: column;
+  gap: 6px;
+}
+main .related-products-section .card-container .card-body .card-badge {
+  justify-content: end;
+}
+main .related-products-section .card-container .card-body .card-badge span {
+  border-radius: 2px;
+  padding: 0 4px;
+  background: #B2F5EA;
+  color: #234E52;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+main .related-products-section .card-container .card-body .stock {
+  color: #0DB04B;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+}
+main .related-products-section .card-container .card-body .card-title {
+  color: #1D1D21;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.32px;
+}
+main .related-products-section .card-container .card-body .sale span {
+  color: #744210;
+  background-color: #FEEBCB;
+  border-radius: 2px;
+  padding: 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+main .related-products-section .card-container .card-body .weight {
+  color: #828282;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.24px;
 }
 
 footer {

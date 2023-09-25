@@ -91,12 +91,12 @@ const Product = () => {
                         <s className='strikethrough-text'>৳ 150.00</s>
                     </p>
                     <div className='flex product-short-info'>
-                        <div className='short-info-title-container'>
+                        <div className='short-info-title-container flex'>
                             <p className='short-info-title'>Stock</p>
                             <p className='short-info-title'>SKU</p>
                             <p className='short-info-title'>Categories</p>
                         </div>
-                        <div className='short-info-details-container'>
+                        <div className='short-info-details-container flex'>
                             <p className='short-info-details-container-child-1'>In Stock</p>
                             <p className='short-info-details-container-child-2'>B42312</p>
                             <p className='short-info-details-container-child-3 flex items-center'>
@@ -116,7 +116,7 @@ const Product = () => {
                             </svg>
                             Add To Cart
                         </button>
-                        <span className='interaction'>
+                        <span className='interaction flex items-center'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <mask id="path-1-inside-1_7_879" fill="white">
                                     <path d="M13 4.9779C11.8196 3.89252 10.2746 3.29012 8.67102 3.29007C7.82227 3.29095 6.98208 3.45968 6.19878 3.78653C5.41549 4.11338 4.70457 4.59191 4.10694 5.19457C1.55785 7.75449 1.55894 11.7585 4.1091 14.3076L12.0521 22.2506C12.2363 22.5745 12.5916 22.7836 13 22.7836C13.1677 22.7819 13.3327 22.741 13.4817 22.6641C13.6307 22.5871 13.7596 22.4763 13.858 22.3405L21.8909 14.3076C24.4411 11.7574 24.4411 7.75449 21.8888 5.19024C21.2914 4.58868 20.5811 4.11112 19.7986 3.78503C19.016 3.45893 18.1768 3.29072 17.329 3.29007C15.7255 3.29033 14.1805 3.8927 13 4.9779ZM20.3569 6.72207C22.0502 8.42399 22.0513 11.0825 20.3591 12.7757L13 20.1348L5.64094 12.7757C3.94877 11.0825 3.94985 8.42399 5.63877 6.7264C6.4621 5.9074 7.53894 5.45674 8.67102 5.45674C9.8031 5.45674 10.8756 5.9074 11.6924 6.72424L12.2341 7.2659C12.3346 7.36659 12.454 7.44648 12.5854 7.50098C12.7169 7.55548 12.8577 7.58354 13 7.58354C13.1423 7.58354 13.2832 7.55548 13.4146 7.50098C13.546 7.44648 13.6654 7.36659 13.7659 7.2659L14.3076 6.72424C15.9456 5.08949 18.7211 5.09382 20.3569 6.72207Z" />
