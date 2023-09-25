@@ -27,7 +27,7 @@ button {
 }
 
 .justify-center {
-  position: relative;
+  justify-content: center;
 }
 
 .items-center {
@@ -379,7 +379,6 @@ main .product-section .product .product-info .product-interaction .cart-btn:hove
 }
 main .product-section .product .product-info .product-interaction .interaction {
   padding: 11px;
-  justify-content: center;
   border-radius: 4px;
   background: #FFF;
 }
@@ -428,7 +427,6 @@ main .product-section .product .related-items .related-items-container .related-
 main .product-section .product .related-items .related-items-container .related-items-cart-icon {
   width: 26px;
   height: 26px;
-  justify-content: center;
   border-radius: 30px;
   background: #11823B;
   position: absolute;
@@ -459,7 +457,6 @@ main .related-products-section .related-products-title-container .slider-btn .ar
   width: 32px;
   height: 32px;
   padding: 4px;
-  justify-content: center;
   border-radius: 4px;
   background: #FFF;
   transition: 0.3s;
@@ -491,7 +488,6 @@ main .related-products-section .card-container .quantity-management .quantity-co
   width: 100%;
 }
 main .related-products-section .card-container .quantity-management .quantity-container .quantity-btn {
-  justify-content: center;
   width: 38px;
   height: 38px;
   border-radius: 100%;

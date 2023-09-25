@@ -31,7 +31,7 @@ button {
 }
 
 .justify-center {
-    position: relative;
+    justify-content: center;
 }
 
 .items-center {
@@ -50,6 +50,7 @@ button {
     cursor: pointer;
 }
 
+// Section Style starts
 header {
     max-width: 1440px;
     margin: 0 auto;
@@ -442,7 +443,6 @@ main {
 
                     .interaction {
                         padding: 11px;
-                        justify-content: center;
                         border-radius: 4px;
                         background: #FFF;
                     }
@@ -501,7 +501,6 @@ main {
                     .related-items-cart-icon {
                         width: 26px;
                         height: 26px;
-                        justify-content: center;
                         border-radius: 30px;
                         background: #11823B;
                         position: absolute;
@@ -540,7 +539,6 @@ main {
                     width: 32px;
                     height: 32px;
                     padding: 4px;
-                    justify-content: center;
                     border-radius: 4px;
                     background: #FFF;
                     transition: .3s;
@@ -576,7 +574,6 @@ main {
                     width: 100%;
 
                     .quantity-btn {
-                        justify-content: center;
                         width: 38px;
                         height: 38px;
                         border-radius: 100%;
@@ -847,7 +844,6 @@ footer {
 
 
 // Responsive Start
-
 @media screen and (max-width: 767px) {
     .container {
         padding: 0 17px;
