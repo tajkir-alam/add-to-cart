@@ -2,7 +2,7 @@
 # Project Title
 
 This front-end website rather you can say a demo of Product Page. 
-#### This React.Js front-end design is fully responsive, included dark-mode. Dark-mode will depend on your device theme. Still I am working on it. This front-end application created with raw SCSS / CSS3. Proper use of semantic tag to get best performance on SEO.
+#### This React.Js front-end design is fully responsive, included dark-mode. Dark-mode will depend on your device theme. This front-end application created with raw SCSS / CSS3. Proper usage of semantic tag to get best performance on SEO.
 
 
 ## Live Link
