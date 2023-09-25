@@ -36,7 +36,7 @@ const RelatedProducts = () => {
                 spaceBetween={10}
                 navigation={{
                     nextEl: '.next-btn',
-                    prevEl: '.prev-btn'
+                    prevEl: '.prev-btn',
                 }}
                 modules={[Navigation]}
                 breakpoints={{
