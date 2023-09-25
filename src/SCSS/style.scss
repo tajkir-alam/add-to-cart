@@ -1,5 +1,6 @@
 $primary-color: #1D1D21;
 $secondary-color: #333;
+$text-white: #fff;
 
 * {
     margin: 0;
@@ -8,6 +9,14 @@ $secondary-color: #333;
     font-family: 'Inter', sans-serif;
     list-style: none;
     text-decoration: none;
+}
+
+[data-theme='dark'] {
+    $text-white: #000;
+    $primary-color: #F3F3EF;
+    $secondary-color: #E1E1E1;
+
+    // More code will be add here. eg. BG!....
 }
 
 button {
@@ -92,7 +101,7 @@ header {
                     border-right: 1px;
                     border-top: 0;
                     border-bottom: 0;
-                    border-color: white;
+                    border-color: $text-white;
                     border-style: solid;
                 }
             }
@@ -184,7 +193,7 @@ header {
                         height: 20px;
                         line-height: 20px;
                         text-align: center;
-                        color: white;
+                        color: $text-white;
                         font-size: 11px;
                         font-weight: 500;
                         border-radius: 100%;
@@ -257,7 +266,7 @@ main {
                                 bottom: 70%;
                                 left: 25%;
                                 transform: translateY(-10%);
-                                color: white;
+                                color: $text-white;
                                 font-size: 14px;
                                 font-weight: 600;
                             }
@@ -288,7 +297,7 @@ main {
                             .sale-text {
                                 font-size: 29px;
                                 font-weight: 700;
-                                color: white;
+                                color: $text-white;
                                 position: absolute;
                                 top: 30%;
                                 left: 10%;
@@ -305,7 +314,7 @@ main {
                             .sale-exclamation {
                                 font-size: 41px;
                                 font-weight: 700;
-                                color: white;
+                                color: $text-white;
                                 position: absolute;
                                 top: 15%;
                                 right: 20%;
@@ -590,7 +599,7 @@ main {
                         width: 100%;
                         top: 0;
                         justify-content: space-between;
-                        color: white;
+                        color: $text-white;
                         font-size: 18px;
                         font-weight: 700;
                         letter-spacing: -0.36px;

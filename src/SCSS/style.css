@@ -79,7 +79,7 @@ header .header-section .header-menu ul > li:nth-child(2) a {
   border-right: 1px;
   border-top: 0;
   border-bottom: 0;
-  border-color: white;
+  border-color: #fff;
   border-style: solid;
 }
 header nav .nav-container .nav-left-content {
@@ -153,7 +153,7 @@ header nav .nav-container .nav-right-content .fav-icon .fav-icon-badge {
   height: 20px;
   line-height: 20px;
   text-align: center;
-  color: white;
+  color: #fff;
   font-size: 11px;
   font-weight: 500;
   border-radius: 100%;
@@ -215,7 +215,7 @@ main .product-section .product .product-img .product-img-container .discountImg-
   bottom: 70%;
   left: 25%;
   transform: translateY(-10%);
-  color: white;
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
 }
@@ -245,7 +245,7 @@ main .product-section .product .product-img .product-img-container .saleImg-cont
 main .product-section .product .product-img .product-img-container .sale-img-vector .saleImg-content .sale-text {
   font-size: 29px;
   font-weight: 700;
-  color: white;
+  color: #fff;
   position: absolute;
   top: 30%;
   left: 10%;
@@ -262,7 +262,7 @@ main .product-section .product .product-img .product-img-container .saleImg-cont
 main .product-section .product .product-img .product-img-container .sale-img-vector .saleImg-content .sale-exclamation {
   font-size: 41px;
   font-weight: 700;
-  color: white;
+  color: #fff;
   position: absolute;
   top: 15%;
   right: 20%;
@@ -502,7 +502,7 @@ main .related-products-section .card-container .quantity-management .quantity-co
   width: 100%;
   top: 0;
   justify-content: space-between;
-  color: white;
+  color: #fff;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.36px;
