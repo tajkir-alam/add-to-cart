@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import RelatedProductCard from './RelatedProductCard';
+
 
 const RelatedProducts = () => {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch('/relatedProducts/relatedProducts.json')
+            .then(res => res.json())
+            .then(data => setProducts(data.products))
+    }, [])
+    console.log(products);
+
     return (
         <section className='related-products-section'>
             <div className='related-products-title-container flex items-center'>
@@ -20,7 +33,33 @@ const RelatedProducts = () => {
             </div>
 
             <div className='card-container'>
-                
+                <Swiper
+                    slidesPerView={1.8}
+                    spaceBetween={10}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 4,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 5,
+                            spaceBetween: 50,
+                        },
+                    }}
+                    className="mySwiper"
+                >
+                    {
+                        products.map(product =>
+                            <SwiperSlide>
+                                <RelatedProductCard />
+                            </SwiperSlide>
+                        )
+                    }
+                </Swiper>
             </div>
         </section>
     );
