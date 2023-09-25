@@ -664,8 +664,15 @@ footer {
     }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .lg-d-none {
+        display: none;
+    }
+
+
+}
+@media screen and (max-width: 1024px) {
+    .md-d-none {
         display: none;
     }
 

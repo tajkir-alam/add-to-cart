@@ -71,7 +71,7 @@ const Nav = () => {
 
                     {/* Right Content */}
                     <div className='nav-right-content flex items-center'>
-                        <div className='sm-d-none search'>
+                        <div className='sm-d-none md-d-none search'>
                             <input
                                 type="text"
                                 name=""

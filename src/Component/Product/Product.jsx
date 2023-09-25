@@ -132,7 +132,7 @@ const Product = () => {
                         </span>
                     </div>
                 </div>
-                <div className='sm-d-none related-items'>
+                <div className='sm-d-none md-d-none related-items'>
                     <h4 className='related-items-title'>Related Items</h4>
                     <RelatedItem
                         url="/tree.png"
