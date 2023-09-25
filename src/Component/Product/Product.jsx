@@ -39,10 +39,20 @@ const Product = () => {
 
             <div className='product'>
                 <div className='product-img' >
-                    <div className='flex items-center justify-center'>
+                    <div className='product-img-container'>
                         <img src="/productImg.png" alt="" className='productImg' />
 
-                        {/* for top left discount content */}
+                        {/* fot top left discount content */}
+                        <div className="discountImg-container">
+                            <span className='discountImg-content'>
+                                <img src="/discount.png" alt="" />
+                                <span className="discountImg-text">
+                                    10% OFF
+                                </span>
+                            </span>
+                        </div>
+
+                        {/* for bottom right sale content */}
                         <div className="saleImg-container">
                             <div className="saleImg-content">
                                 <span className='sale-img-vector'>
@@ -66,17 +76,6 @@ const Product = () => {
                             </div>
                         </div>
                     </div>
-
-                    <div className="discountImg-container">
-                        <span className='discountImg-content'>
-                            <img src="/discount.png" alt="" />
-                            <span className="discountImg-text">
-                                10% OFF
-                            </span>
-                        </span>
-                    </div>
-
-                    {/* fot bottom right sale content */}
                 </div>
 
                 <div className='product-info'>

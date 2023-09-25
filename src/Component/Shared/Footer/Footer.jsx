@@ -68,7 +68,7 @@ const Footer = () => {
                 </div>
             </section>
             <section className="bottom-footer">
-                <p className='bottom-footer-text'>© 2023 ThinkCrypt, All Rights Reserved</p>
+                <p className='bottom-footer-text'>© 2023 ThinkCrypt, All Rights Reserved | Powered by <a href="https://md-tajkir-alam.web.app/">MD TAJKIR ALAM</a></p>
             </section>
         </footer>
     );

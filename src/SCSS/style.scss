@@ -42,6 +42,10 @@ button {
     display: none;
 }
 
+.lg-d-none {
+    display: none;
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -229,87 +233,91 @@ main {
             gap: 45px;
 
             .product-img {
-                position: relative;
                 grid-column: span 4;
 
-                .productImg {
-                    width: 100%;
-                    height: 100%;
-                }
+                .product-img-container {
+                    position: relative;
 
-                .discountImg-container {
-                    position: absolute;
-                    top: 0;
-                    left: 5%;
+                    .productImg {
+                        width: 100%;
+                        height: 100%;
+                    }
 
-                    .discountImg-content {
-                        position: relative;
+                    .discountImg-container {
+                        position: absolute;
+                        top: 0;
+                        left: 5%;
 
-                        .discountImg-text {
-                            position: absolute;
-                            bottom: 70%;
-                            left: 25%;
-                            transform: translateY(-10%);
-                            color: white;
-                            font-size: 14px;
-                            font-weight: 600;
+                        .discountImg-content {
+                            position: relative;
+
+                            .discountImg-text {
+                                position: absolute;
+                                bottom: 70%;
+                                left: 25%;
+                                transform: translateY(-10%);
+                                color: white;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                    .saleImg-container,
+                    .sale-img-vector {
+                        position: absolute;
+                        right: 5%;
+                        bottom: 0;
+
+                        .saleImg-content {
+                            position: relative;
+
+                            .dash-top {
+                                position: absolute;
+                                top: 10%;
+                                left: 10%;
+                            }
+
+                            .dash-bottom {
+                                position: absolute;
+                                bottom: 15%;
+                                left: 15%;
+                            }
+
+                            .sale-text {
+                                font-size: 29px;
+                                font-weight: 700;
+                                color: white;
+                                position: absolute;
+                                top: 30%;
+                                left: 10%;
+                                transform: rotate(-12.599deg);
+
+                                .super-text {
+                                    font-size: 19px;
+                                    color: #D46400;
+                                    display: block;
+                                    margin-bottom: -10px;
+                                }
+                            }
+
+                            .sale-exclamation {
+                                font-size: 41px;
+                                font-weight: 700;
+                                color: white;
+                                position: absolute;
+                                top: 15%;
+                                right: 20%;
+                                transform: rotate(-12.599deg);
+
+                                .exclamation-symbol {
+                                    color: #D46400;
+                                }
+                            }
                         }
                     }
                 }
 
-                .saleImg-container,
-                .sale-img-vector {
-                    position: absolute;
-                    right: 5%;
-                    bottom: 0;
-
-                    .saleImg-content {
-                        position: relative;
-
-                        .dash-top {
-                            position: absolute;
-                            top: 10%;
-                            left: 10%;
-                        }
-
-                        .dash-bottom {
-                            position: absolute;
-                            bottom: 15%;
-                            left: 15%;
-                        }
-
-                        .sale-text {
-                            font-size: 29px;
-                            font-weight: 700;
-                            color: white;
-                            position: absolute;
-                            top: 30%;
-                            left: 10%;
-                            transform: rotate(-12.599deg);
-
-                            .super-text {
-                                font-size: 19px;
-                                color: #D46400;
-                                display: block;
-                                margin-bottom: -10px;
-                            }
-                        }
-
-                        .sale-exclamation {
-                            font-size: 41px;
-                            font-weight: 700;
-                            color: white;
-                            position: absolute;
-                            top: 15%;
-                            right: 20%;
-                            transform: rotate(-12.599deg);
-
-                            .exclamation-symbol {
-                                color: #D46400;
-                            }
-                        }
-                    }
-                }
             }
 
             .product-info {
@@ -825,6 +833,14 @@ footer {
             line-height: 17px;
             letter-spacing: -0.2px;
             margin-top: 21px;
+
+            a {
+                color: $secondary-color;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
         }
     }
 }
@@ -839,6 +855,10 @@ footer {
 
     .sm-d-none {
         display: none;
+    }
+
+    .lg-d-none {
+        display: block;
     }
 
     header {
@@ -858,7 +878,8 @@ footer {
 
             .product {
                 margin-top: 32px;
-                grid-template-columns: repeat(1, 1fr);
+                display: flex;
+                flex-direction: column;
             }
         }
     }
@@ -885,6 +906,24 @@ footer {
         display: none;
     }
 
+    main {
+
+        .product-section {
+
+            .product {
+                grid-template-columns: repeat(12, 1fr);
+
+                .product-img {
+                    grid-column: span 6;
+                }
+
+                .product-info {
+                    grid-column: span 6;
+                }
+            }
+        }
+    }
+
     footer {
         padding: 30px 24px;
 
@@ -898,14 +937,30 @@ footer {
     }
 }
 
-@media screen and (min-width : 770px) and (max-width: 1024px) {
+@media screen and (width : 1024px) {
     .md-d-none {
         display: none;
     }
 
-    footer {
-        padding: 30px 24px;
+    main {
 
+        .product-section {
+
+            .product {
+                grid-template-columns: repeat(12, 1fr);
+
+                .product-img {
+                    grid-column: span 6;
+                }
+
+                .product-info {
+                    grid-column: span 6;
+                }
+            }
+        }
+    }
+
+    footer {
         .top-footer {
             grid-template-columns: repeat(2, 1fr);
 
