@@ -11,7 +11,7 @@ const RelatedProducts = () => {
             .then(res => res.json())
             .then(data => setProducts(data.products))
     }, [])
-    
+
     return (
         <section className='related-products-section'>
             <div className='related-products-title-container flex items-center'>

@@ -590,6 +590,8 @@ main .related-products-section .card-container .card-body .card-price-container 
 footer {
   background-color: #ECECE8;
   padding: 30px 90px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 footer .top-footer {
   border-top: 1px solid #E1E1E1;
@@ -668,6 +670,7 @@ footer .top-footer:nth-child(1) .col .contact-number {
   margin-top: 9px;
   margin-bottom: 17px;
   margin-left: 27px;
+  white-space: nowrap;
 }
 footer .top-footer:nth-child(1) .col .contact-mail {
   margin-top: 16px;
@@ -703,20 +706,40 @@ footer .top-footer:nth-child(1) .col .app-img {
     padding: 30px 24px;
   }
   footer .top-footer {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   footer .top-footer .nav-col {
     gap: 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 769px) {
+  .md-d-none {
+    display: none;
+  }
   .lg-d-none {
     display: none;
   }
+  footer {
+    padding: 30px 24px;
+  }
+  footer .top-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .top-footer .nav-col {
+    gap: 32px;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 770px) and (max-width: 1024px) {
   .md-d-none {
     display: none;
+  }
+  footer {
+    padding: 30px 24px;
+  }
+  footer .top-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .top-footer .nav-col {
+    gap: 32px;
   }
 }/*# sourceMappingURL=style.css.map */
