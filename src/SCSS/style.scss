@@ -505,6 +505,7 @@ main {
 
     // Related Products Section
     .related-products-section {
+        padding: 0px 0px 50px 0px;
 
         .related-products-title-container {
             gap: 17px;
@@ -531,7 +532,7 @@ main {
                     cursor: pointer;
                     transition: .3s;
 
-                    &:hover{
+                    &:hover {
                         transform: scale(1.1);
                     }
                 }
@@ -543,6 +544,9 @@ main {
             }
         }
 
+        .card-container {
+            margin-top: 25px;
+        }
     }
 }
 

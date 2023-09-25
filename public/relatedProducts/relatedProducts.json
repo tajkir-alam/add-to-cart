@@ -1,0 +1,54 @@
+{
+    "products": [
+        {
+            "img": "/carrots.png",
+            "badge": false,
+            "stock": "IN STOCK",
+            "name": "Guava Fruit Fresh",
+            "sale": false,
+            "weight": "1kg",
+            "price": "৳ 220",
+            "sale_price": false
+        },
+        {
+            "img": "/strawberry.png",
+            "badge": "PLASTIC FREE",
+            "stock": "IN STOCK",
+            "name": "Guava Fruit Fresh",
+            "sale": "10% OFF",
+            "weight": "1kg",
+            "price": "৳ 220",
+            "sale_price": "৳ 300"
+        },
+        {
+            "img": "/guava.png",
+            "badge": "PLASTIC FREE",
+            "stock": "IN STOCK",
+            "name": "Guava Fruit Fresh",
+            "sale": "10% OFF",
+            "weight": "1kg",
+            "price": "৳ 220",
+            "sale_price": "৳ 300"
+        },
+        {
+            "img": "/potato.png",
+            "badge": "80G PLASTIC",
+            "stock": "IN STOCK",
+            "name": "Guava Fruit Fresh",
+            "sale": false,
+            "weight": "1kg",
+            "price": "৳ 220",
+            "sale_price": false
+        },
+        {
+            "img": "/apple.png",
+            "badge": false,
+            "stock": "IN STOCK",
+            "name": "Guava Fruit Fresh",
+            "sale": false,
+            "weight": "1kg",
+            "price": "৳ 220",
+            "sale_price": false
+        }
+    ]
+}

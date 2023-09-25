@@ -427,6 +427,9 @@ main .product-section .product .related-items .side-img {
   width: 308px;
   height: 250px;
 }
+main .related-products-section {
+  padding: 0px 0px 50px 0px;
+}
 main .related-products-section .related-products-title-container {
   gap: 17px;
 }
@@ -458,6 +461,9 @@ main .related-products-section .related-products-title-container .slider-btn .ar
 main .related-products-section .related-products-title-container .slider-btn .arrow-left {
   border: 1px solid #DFE3E8;
   opacity: 0.5;
+}
+main .related-products-section .card-container {
+  margin-top: 25px;
 }
 
 footer {

@@ -18,6 +18,10 @@ const RelatedProducts = () => {
                     </span>
                 </div>
             </div>
+
+            <div className='card-container'>
+                
+            </div>
         </section>
     );
 };
