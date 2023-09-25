@@ -502,6 +502,48 @@ main {
             }
         }
     }
+
+    // Related Products Section
+    .related-products-section {
+
+        .related-products-title-container {
+            gap: 17px;
+
+            .related-products-title {
+                color: #1D1D21;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .slider-btn {
+                gap: 7px;
+
+                .arrow-left,
+                .arrow-right {
+                    display: flex;
+                    width: 32px;
+                    height: 32px;
+                    padding: 4px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 4px;
+                    background: #FFF;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+
+                .arrow-left {
+                    border: 1px solid #DFE3E8;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+    }
 }
 
 footer {
