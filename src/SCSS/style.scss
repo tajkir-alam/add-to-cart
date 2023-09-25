@@ -698,6 +698,66 @@ footer {
     background-color: #ECECE8;
     padding: 30px 90px;
 
+    .top-footer {
+        border-top: 1px solid #E1E1E1;
+        border-bottom: 1px solid #E1E1E1;
+        padding: 45px 0px;
+        display: grid;
+        grid-template-columns: 5fr 1fr 1fr 1fr 4fr;
+        gap: 80px;
+
+        .col {
+
+            >h3 {
+                white-space: nowrap;
+                margin-bottom: 26px;
+                color: $secondary-color;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: -0.28px;
+            }
+        }
+
+        .col ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            
+            li {
+                position: relative;
+                cursor: pointer;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -3px;
+                    width: 0%;
+                    height: 2px;
+                    background-color: $secondary-color;
+                    opacity: 0.5;
+                    transition: .3s;
+
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            li>a {
+                color: $secondary-color;
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: -0.2px;
+                white-space: nowrap;
+                padding-right: 4px;
+            }
+        }
+    }
+
     .top-footer:nth-child(1) {
         .col {
             .footer-description {
@@ -734,43 +794,15 @@ footer {
                 margin-top: 16px;
             }
 
-            .hotline, .contact-address, .contact-mail {
+            .hotline,
+            .contact-address,
+            .contact-mail {
                 gap: 8px;
             }
-        }
-    }
 
-    .top-footer {
-        border-top: 1px solid #E1E1E1;
-        border-bottom: 1px solid #E1E1E1;
-        padding: 45px 0px;
-        display: grid;
-        grid-template-columns: 5fr 1fr 1fr 1fr 4fr;
-        gap: 80px;
-
-        .col ul {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .col,
-        ul li>a {
-            color: $secondary-color;
-            font-size: 12px;
-            font-weight: 500;
-            letter-spacing: -0.2px;
-        }
-
-        .col {
-
-            >h3 {
-                white-space: nowrap;
-                margin-bottom: 26px;
-                color: $secondary-color;
-                font-size: 16px;
-                font-weight: 600;
-                letter-spacing: -0.28px;
+            .app-img {
+                margin-top: 22px;
+                gap: 8px;
             }
         }
     }

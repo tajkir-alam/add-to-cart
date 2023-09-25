@@ -59,9 +59,9 @@ const Footer = () => {
                 <div className="col">
                     <h3>Install App</h3>
                     <p>Download Our App from App Store orGoogle Play Store</p>
-                    <div className='flex items-center'>
-                        <img src="/googleplay.png" alt="" />
+                    <div className='flex items-center app-img'>
                         <img src="/appstore.png" alt="" />
+                        <img src="/googleplay.png" alt="" />
                     </div>
                 </div>
             </section>
