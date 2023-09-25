@@ -24,14 +24,14 @@ const Product = () => {
             </p>
             {/* For Small Device */}
             <p className='path flex items-center lg-d-none'>
-                Home
+                Home &nbsp;
                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
                     <path d="M1.0575 0.5L0 1.5575L3.435 5L0 8.4425L1.0575 9.5L5.5575 5L1.0575 0.5Z" fill="#1A202C" />
-                </svg>
-                Products
+                </svg> &nbsp;
+                Products &nbsp;
                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
                     <path d="M1.0575 0.5L0 1.5575L3.435 5L0 8.4425L1.0575 9.5L5.5575 5L1.0575 0.5Z" fill="#1A202C" />
-                </svg>
+                </svg> &nbsp;
                 <span className="current-path">
                     Chicken Drumstick
                 </span>
