@@ -1,8 +1,38 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Title
 
-Currently, two official plugins are available:
+This front-end website rather you can say a demo of Product Page. 
+#### This React.Js front-end design is fully responsive, included dark-mode. Dark-mode will depend on your device theme. Still I am working on it. This front-end application created with raw SCSS / CSS3. Proper use of semantic tag to get best performance on SEO.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Live Link
+
+https://product-page-by-tajkir.netlify.app/
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/tajkir-alam/product-page.git
+```
+
+Go to the project directory
+
+```bash
+  cd product-page
+```
+
+Install dependencies
+
+```bash
+  npm install / npm i 
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
