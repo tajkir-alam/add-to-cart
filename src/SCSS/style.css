@@ -589,6 +589,68 @@ main .related-products-section .card-container .card-body .card-price-container 
 
 footer {
   background-color: #ECECE8;
+  padding: 30px 90px;
+}
+footer .top-footer:nth-child(1) .col .footer-description {
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.36px;
+  margin-top: 35px;
+  margin-bottom: 22px;
+}
+footer .top-footer:nth-child(1) .col > p,
+footer .top-footer:nth-child(1) .col .contact-mail {
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+}
+footer .top-footer:nth-child(1) .col .contact-number {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  display: block;
+  margin-top: 9px;
+  margin-bottom: 17px;
+  margin-left: 27px;
+}
+footer .top-footer:nth-child(1) .col .contact-mail {
+  margin-top: 16px;
+}
+footer .top-footer:nth-child(1) .col .hotline, footer .top-footer:nth-child(1) .col .contact-address, footer .top-footer:nth-child(1) .col .contact-mail {
+  gap: 8px;
+}
+footer .top-footer {
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 45px 0px;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr 4fr;
+  gap: 80px;
+}
+footer .top-footer .col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .top-footer .col,
+footer .top-footer ul li > a {
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+footer .top-footer .col > h3 {
+  white-space: nowrap;
+  margin-bottom: 26px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
 }
 
 @media screen and (max-width: 767px) {
