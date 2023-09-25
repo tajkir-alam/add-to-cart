@@ -21,6 +21,7 @@
     font-size: 26px;
     font-weight: 600;
     padding: 0px 5px 0px 0px;
+    white-space: nowrap;
 }
 
 .react-tabs__tab--selected {
@@ -35,4 +36,10 @@
 .react-tabs__tab:focus {
     outline: none;
     border-bottom: 4px solid #11823B;
+}
+
+@media screen and (max-width: 767px) {
+    .detail-tabs {
+        grid-column: span 12;
+    }
 }
