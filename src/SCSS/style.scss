@@ -622,6 +622,25 @@ main {
                     font-weight: 600;
                     letter-spacing: -0.24px;
                 }
+
+                .card-price-container {
+                    gap: 8px;
+
+                    .card-item-price {
+                        color: #1D1D1D;
+                        font-size: 20px;
+                        font-weight: 700;
+                        letter-spacing: -0.4px;
+                    }
+
+                    .card-item-sale-price {
+                        text-decoration: line-through;
+                        color:#11823B;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: -0.32px;
+                    }
+                }
             }
         }
     }
@@ -671,6 +690,7 @@ footer {
 
 
 }
+
 @media screen and (max-width: 1024px) {
     .md-d-none {
         display: none;

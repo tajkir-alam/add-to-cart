@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import RelatedProductCard from './RelatedProductCard';
 
-
 const RelatedProducts = () => {
     const [products, setProducts] = useState([]);
 
@@ -12,8 +11,7 @@ const RelatedProducts = () => {
             .then(res => res.json())
             .then(data => setProducts(data.products))
     }, [])
-    // console.log(products);
-
+    
     return (
         <section className='related-products-section'>
             <div className='related-products-title-container flex items-center'>

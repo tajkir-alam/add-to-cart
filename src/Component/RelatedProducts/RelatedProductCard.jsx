@@ -2,7 +2,7 @@ import React from 'react';
 
 const RelatedProductCard = ({ product }) => {
     const { img, badge, stock, name, sale, weight, price, sale_price } = product;
-    console.log(product);
+    
     return (
         <div className='card-container'>
             <div className='card-img'>
