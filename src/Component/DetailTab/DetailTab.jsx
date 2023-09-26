@@ -1,6 +1,5 @@
 import React from 'react';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
 import './detailTab.css';
 
 const DetailTab = () => {
